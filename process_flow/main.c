@@ -22,7 +22,7 @@ int parse(char* linha, char* tokens[]){
     return cont;
 }
 
-void cmd(char* tokens[], int qtd){
+void checar(char* tokens[], int qtd){
     if (qtd == 0) return;
     if (strcmp(tokens[0], "run") == 0){
         printf("esse é o comando run\n");
@@ -49,7 +49,7 @@ int main(){
         int qtd = parse(linhaDigitada, tokens);
 
         if (qtd > 0){
-            cmd(tokens, qtd);
+            checar(tokens, qtd);
         }
         else{
             continue;
