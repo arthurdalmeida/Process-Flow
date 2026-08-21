@@ -14,9 +14,16 @@ int main(){
 
     else if (pid == 0){
         printf("fiz o fork, sou filho\n");
+        execlp("/bin/ls", "ls", "-1", NULL);
+        printf("erro ao executar programa\n");
+        return 1;
     }
 
     else {
         printf("fiz o fork, sou o pai\n");
+        int status;
+        waitpid(pid, &status, 0);
+        printf("o filho terminou de rodar");
     }
+    return 0;
 }
