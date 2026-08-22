@@ -10,6 +10,9 @@ typedef struct {
     int argc;
 } task;
 
+task tasks[50];
+int qtdDeTasks = 0;
+
 int parse(char* linha, char* tokens[]){
     int cont = 0;
     char* token = strtok(linha, " \n");
@@ -25,11 +28,25 @@ int parse(char* linha, char* tokens[]){
 void checar(char* tokens[], int qtd){
     if (qtd == 0) return;
     if (strcmp(tokens[0], "run") == 0){
-        printf("esse é o comando run\n");
+        for (int i=0; i<qtdDeTasks; i++){
+            if (strcmp(tokens[1], tasks[i].nome) == 0){
+                printf("achasse a tarefa");
+            }
+        }
     }
 
     else if (strcmp(tokens[0], "task") == 0){
-        printf("esse é o comando task\n");
+        strcpy(tasks[qtdDeTasks].nome, tokens[1]);
+
+        int j = 0;
+        for (int i=2; i<qtd; i++){
+            tasks[qtdDeTasks].argv[j] = malloc(strlen(tokens[i]) + 1);
+            strcpy(tasks[qtdDeTasks].argv[j], tokens[i]);
+            j++;
+        }
+
+        tasks[qtdDeTasks].argc = j;
+        qtdDeTasks++;
     }
     
     else if (strcmp(tokens[0], "exit") == 0){
