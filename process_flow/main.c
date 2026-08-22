@@ -4,6 +4,8 @@
 #include <unistd.h>
 #include <string.h>
 
+void execProcesso(char* argv[]);
+
 typedef struct {
     char nome[50];
     char *argv[20];
@@ -30,6 +32,7 @@ void checar(char* tokens[], int qtd){
     if (strcmp(tokens[0], "run") == 0){
         for (int i=0; i<qtdDeTasks; i++){
             if (strcmp(tokens[1], tasks[i].nome) == 0){
+                execProcesso(tasks[i].argv);
                 printf("achasse a tarefa");
             }
         }
@@ -46,6 +49,7 @@ void checar(char* tokens[], int qtd){
         }
 
         tasks[qtdDeTasks].argc = j;
+        tasks[qtdDeTasks].argv[j] = NULL;
         qtdDeTasks++;
     }
     

@@ -2,28 +2,27 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-int main(){
+void execProcesso(char* argv[]){
     pid_t pid;
 
     pid = fork();
 
     if (pid<0){
         printf("Erro no fork\n");
-        return 1;
+        return;
     }
 
     else if (pid == 0){
         printf("fiz o fork, sou filho\n");
-        execlp("/bin/ls", "ls", "-1", NULL);
+        execvp(argv[0], argv);
         printf("erro ao executar programa\n");
-        return 1;
+        return;
     }
 
     else {
         printf("fiz o fork, sou o pai\n");
         int status;
         waitpid(pid, &status, 0);
-        printf("o filho terminou de rodar");
+        printf("o filho terminou de rodar\n");
     }
-    return 0;
 }
