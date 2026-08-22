@@ -5,6 +5,7 @@
 #include <string.h>
 
 void execProcesso(char* argv[]);
+pid_t processoParallel(char* argv[]);
 
 typedef struct {
     char nome[50];
@@ -41,6 +42,26 @@ void checar(char* tokens[], int qtd){
                         execProcesso(tasks[j].argv);
                     }   
                 }
+            }
+        }
+
+        else if(strcmp(tokens[1], "parallel") == 0){
+            pid_t pids[20];
+            int qtdPID = 0;
+
+            for (int i=2; i<qtd; i++){
+                for (int j=0; j<qtdDeTasks; j++){
+                    if (strcmp(tasks[j].nome, tokens[i]) == 0){
+                        pids[qtdPID] = processoParallel(tasks[j].argv);
+
+                        if (pids[qtdPID] != -1){
+                            qtdPID++;
+                        }
+                    }
+                }
+            }
+            for (int i=0; i<qtdPID; i++){
+                waitpid(pids[i], NULL, 0);
             }
         }
         else{

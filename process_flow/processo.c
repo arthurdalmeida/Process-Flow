@@ -26,3 +26,26 @@ void execProcesso(char* argv[]){
         printf("o filho terminou de rodar\n");
     }
 }
+
+pid_t processoParallel(char* argv[]){
+    pid_t pid;
+
+    pid = fork();
+
+    if (pid<0){
+        printf("Erro no fork\n");
+        return -1;
+    }
+
+    else if (pid == 0){
+        execvp(argv[0], argv);
+        printf("erro\n");
+        return -1;
+    }
+
+    else {
+        printf("fiz o fork, sou o pai\n");
+        printf("iniciou o processo filho. PID: %d\n", pid);
+        return pid;
+    }
+}
