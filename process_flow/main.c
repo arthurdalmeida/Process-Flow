@@ -30,15 +30,34 @@ int parse(char* linha, char* tokens[]){
 void checar(char* tokens[], int qtd){
     if (qtd == 0) return;
     if (strcmp(tokens[0], "run") == 0){
-        for (int i=0; i<qtdDeTasks; i++){
+        if (qtd<2){
+            printf("nao tem tarefa\n");
+            return;
+        }
+        if (strcmp(tokens[1], "sequential") == 0){
+            for (int i=2; i<qtd; i++){
+                for (int j=0; j<qtdDeTasks; j++){
+                    if (strcmp(tasks[j].nome, tokens[i]) == 0){
+                        execProcesso(tasks[j].argv);
+                    }   
+                }
+            }
+        }
+        else{
+            for (int i=0; i<qtdDeTasks; i++){
             if (strcmp(tokens[1], tasks[i].nome) == 0){
                 execProcesso(tasks[i].argv);
                 printf("achasse a tarefa");
             }
         }
+        
+        }
     }
 
     else if (strcmp(tokens[0], "task") == 0){
+        if (qtd<3){
+            return;
+        }
         strcpy(tasks[qtdDeTasks].nome, tokens[1]);
 
         int j = 0;
