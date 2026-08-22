@@ -3,6 +3,7 @@
 #include <sys/wait.h>
 #include <unistd.h>
 #include <string.h>
+#include <fcntl.h>
 
 void execProcesso(char* argv[]);
 pid_t processoParallel(char* argv[]);
@@ -64,14 +65,43 @@ void checar(char* tokens[], int qtd){
                 waitpid(pids[i], NULL, 0);
             }
         }
+
+    
         else{
             for (int i=0; i<qtdDeTasks; i++){
             if (strcmp(tokens[1], tasks[i].nome) == 0){
                 execProcesso(tasks[i].argv);
                 printf("achasse a tarefa");
+                }
             }
         }
-        
+    }
+    else if(strcmp(tokens[0], "output") == 0){
+        int arquivo = open(tokens[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);
+
+        if (arquivo < 0){
+            return;
+        }
+
+        for (int i=0; i<qtdDeTasks; i++){
+            if(strcmp(tokens[1], tasks[i].nome)== 0){
+                pid_t pid = fork();
+
+                if (pid <0){
+                    printf("erro no fork");
+                }
+
+                else if (pid == 0){
+                    dup2(arquivo, 1);
+                    close(arquivo);
+                    execvp(tasks[i].argv[0], tasks[i].argv);
+                }
+
+                else{
+                    close(arquivo);
+                    waitpid(pid, NULL, 0);
+                }
+            }
         }
     }
 
