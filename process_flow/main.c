@@ -66,6 +66,48 @@ void checar(char* tokens[], int qtd){
             }
         }
 
+        else if(strcmp(tokens[1], "pipe") == 0){
+            int posicao1 = -1;
+            int posicao2 = -1;
+            
+            for (int i=0; i<qtdDeTasks; i++){
+                if (strcmp(tokens[2], tasks[i].nome) == 0){
+                    posicao1 = i;
+                }
+
+                if (strcmp(tokens[3], tasks[i].nome) == 0){
+                    posicao2 = i;
+                }
+            }
+            int fd[2];
+            pipe(fd);
+            pid_t PID1 = fork();
+
+            if (PID1 == 0){
+                dup2(fd[1], 1);
+                close(fd[0]);
+                close(fd[1]);
+
+                execvp(tasks[posicao1].argv[0], tasks[posicao1].argv);
+            }
+
+            pid_t PID2 = fork();
+
+            if (PID2 == 0){
+                dup2(fd[0], 0);
+                close(fd[0]);
+                close(fd[1]);
+
+                execvp(tasks[posicao2].argv[0], tasks[posicao2].argv);
+            }
+
+            close(fd[0]);
+            close(fd[1]);
+
+            waitpid(PID1, NULL, 0);
+            waitpid(PID2, NULL, 0);
+        }
+
     
         else{
             for (int i=0; i<qtdDeTasks; i++){
