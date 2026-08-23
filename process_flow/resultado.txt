@@ -1,9 +1,0 @@
-Makefile
-README.md
-evidencias.log
-main.c
-output
-processflow
-processo.c
-processo.o
-resultado.txt
