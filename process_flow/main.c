@@ -132,6 +132,35 @@ void checar(char* tokens[], int qtd){
         }
     }
 
+    else if(strcmp(tokens[0], "append") == 0){
+        int arquivo = open(tokens[2], O_WRONLY | O_CREAT | O_APPEND, 0644);
+
+        if (arquivo < 0){
+            return;
+        }
+
+        for (int i=0; i<qtdDeTasks; i++){
+            if(strcmp(tokens[1], tasks[i].nome)== 0){
+                pid_t pid = fork();
+
+                if (pid <0){
+                    printf("erro no fork");
+                }
+
+                else if (pid == 0){
+                    dup2(arquivo, 1);
+                    close(arquivo);
+                    execvp(tasks[i].argv[0], tasks[i].argv);
+                }
+
+                else{
+                    close(arquivo);
+                    waitpid(pid, NULL, 0);
+                }
+            }
+        }
+    }
+
     else if (strcmp(tokens[0], "task") == 0){
         if (qtd<3){
             return;
