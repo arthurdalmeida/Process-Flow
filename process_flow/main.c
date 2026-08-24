@@ -36,17 +36,14 @@ void execProcesso(char* argv[]){
     }
 
     else if (pid == 0){
-        printf("fiz o fork, sou filho\n");
         execvp(argv[0], argv);
-        printf("erro ao executar programa\n");
-        return;
+        printf("Erro ao executar programa\n");
+        exit(1);
     }
 
     else {
-        printf("fiz o fork, sou o pai\n");
         int status;
         waitpid(pid, &status, 0);
-        printf("o filho terminou de rodar\n");
     }
 }
 
@@ -63,12 +60,11 @@ pid_t processoParallel(char* argv[]){
 
     else if (pid == 0){
         execvp(argv[0], argv);
-        printf("erro\n");
-        return -1;
+        printf("Erro, nao foi possivel executae o programa\n");
+        exit(1);
     }
 
     else {
-        printf("fiz o fork, sou o pai\n");
         printf("iniciou o processo filho. PID: %d\n", pid);
         return pid;
     }
@@ -201,9 +197,15 @@ void checar(char* tokens[], int qtd){
         }
     }
     else if(strcmp(tokens[0], "output") == 0){
+        if (qtd < 3){
+            printf("Erro- informe a tarefa e qual é o arquivo\n");
+            return;
+        }
+
         int arquivo = open(tokens[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);
 
         if (arquivo < 0){
+            printf("Não foi possível abrir o arquivo\n");
             return;
         }
 
@@ -230,9 +232,18 @@ void checar(char* tokens[], int qtd){
     }
 
     else if(strcmp(tokens[0], "input") == 0){
+        if (qtd < 3){
+            printf("Erro- informe a tarefa e qual é o arquivo\n");
+            return;
+        }
+
         int arquivo = open(tokens[2], O_RDONLY);
 
-        if (arquivo <0) return;
+        if (arquivo <0){
+            printf("Não foi possível abrir o arquivo\n");
+            return;
+        } 
+        
 
         for (int i=0; i<qtdDeTasks; i++){
             if(strcmp(tokens[1], tasks[i].nome)== 0){
@@ -257,9 +268,15 @@ void checar(char* tokens[], int qtd){
     }
 
     else if(strcmp(tokens[0], "append") == 0){
+        if (qtd < 3){
+            printf("Erro- informe a tarefa e qual é o arquivo\n");
+            return;
+        }
+
         int arquivo = open(tokens[2], O_WRONLY | O_CREAT | O_APPEND, 0644);
 
         if (arquivo < 0){
+            printf("Não foi possível abrir o arquivo\n");
             return;
         }
 
@@ -287,19 +304,24 @@ void checar(char* tokens[], int qtd){
 
     else if(strcmp(tokens[0], "workdir") == 0){
         if (qtd < 2){
-            printf("o diretorio nao foi informad\n");
+            printf("Erro. O diretorio nao foi informad\n");
             return;
         }
 
         if (chdir(tokens[1]) != 0){
-            printf("invalido\n");
+            printf("Erro. Diretorio invalido\n");
             return;
         }
 
-        printf("diretorio foi alterado\n");
+        printf("Diretorio foi alterado\n");
     }
 
     else if(strcmp(tokens[0], "start") == 0){
+        if (qtd <2){
+            printf("Erro. Informe a tarefa\n");
+            return;
+        }
+
         for (int i=0; i<qtdDeTasks; i++){
             if (strcmp(tokens[1], tasks[i].nome) == 0){
                 pid_t pid = fork();
@@ -348,12 +370,24 @@ void checar(char* tokens[], int qtd){
     else if(strcmp(tokens[0], "jobs") == 0){
         for (int i=0; i<qtdJobs; i++){
             if (jobs[i].ativo == 1){
-                printf("[%d]- %d %s\n", jobs[i].id, jobs[i].pid, jobs[i].nome);
+                pid_t resultado = waitpid(jobs[i].pid, NULL, WNOHANG);
+
+                if (resultado == jobs[i].pid){
+                    jobs[i].ativo = 0;
+                }
+                else if (resultado == 0){
+                    printf("[%d]- %d %s\n", jobs[i].id, jobs[i].pid, jobs[i].nome);
+                }
             }
         }
     }
 
     else if(strcmp(tokens[0], "wait") == 0){
+        if (qtd <2){
+            printf("Erro. Informe o job\n");
+            return;
+        }
+
         int id = atoi(tokens[1]);
 
         for (int i=0; i<qtdJobs; i++){
@@ -367,7 +401,7 @@ void checar(char* tokens[], int qtd){
     }
     
     else if (strcmp(tokens[0], "exit") == 0){
-        printf("esse é o comando exit\n");
+        return;
     }
 
     else{
@@ -386,19 +420,29 @@ int main(int argc, char* argv[]){
         entrada = fopen(argv[1], "r");
 
         if (entrada == NULL){
-            printf("nao abriu o workflow\n");
+            printf("Nao abriu o workflow\n");
             return 1;
         }
     }
 
     else{
+        printf("Erro. O número de argumentoe é invalido");
         return 1;
     }
 
     char linhaDigitada[200];
     char* tokens[20];
 
-    while (fgets(linhaDigitada, 200, entrada) != NULL){
+    while (1){
+        if (argc == 1){
+            printf("processflow> ");
+            fflush(stdout);
+        }
+    
+
+        if (fgets(linhaDigitada, 200, entrada) == NULL){
+            break;
+        }
 
         if (argc == 2){
             printf("%s", linhaDigitada);
@@ -407,15 +451,14 @@ int main(int argc, char* argv[]){
 
         int qtd = parse(linhaDigitada, tokens);
 
-        if (qtd > 0){
-            checar(tokens, qtd);
-        }
-        else{
+        if (qtd == 0){
             continue;
         }
+
+        checar(tokens, qtd);
                 
         if (strcmp(tokens[0], "exit") == 0){
-            printf("programa encerrado");
+            printf("Programa encerrado\n");
             break;
         }
     }
