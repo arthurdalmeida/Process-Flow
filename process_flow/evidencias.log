@@ -477,4 +477,168 @@ programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/P
 [?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
 [?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
 [?2004ltask listar /bin/ls -1
-task ordenar /us
+task ordenar /usm/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ cat teste.txt
+[?2004lMakefile
+README.md
+arquivos.txt
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+resultado.txt
+teste.txt
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ task listar /bin/ls -1
+[?2004lCommand 'task' not found, but can be installed with:
+sudo snap install task         # version v3.51.1, or
+sudo apt  install taskwarrior  # version 2.6.2+dfsg-1
+See 'snap info task' for additional versions.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o process flow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask listar /bin/ls -1
+output listar teste, .txt
+append listar teste.txt
+task w /bin/ls -1
+task o /usr/bin/sort
+tas   run pipe listar      w o
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ task [K[K[K[K[Kgcc main.c processo.c -o process flow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask w /bin/ls -1
+task o /usr  /bin/sort
+task c /usk/bin/wc -1
+run pip  e w o
+task u /bin/ls -1
+task y /usr/bin/wc -1
+run pipe u y
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask listar /bin/ls -1
+task ordenar /usr/bin/sort
+run pipe listar ordenar
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task w /bin/ls -1
+task o /usr/bin/sort
+run pipe w o
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task c /usr/bin/wc -1
+run pipe w o c
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task f /usr/bin/wx -1
+run pipe w o f
+Makefile
+README.md
+evidencias.log
+main.c
+output
+proScript started on 2026-08-22 21:26:51-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="61" LINES="8"]
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ task listar /bin/ls -1
+[?2004lCommand 'task' not found, but can be installed with:
+sudo snap install task         # version v3.51.1, or
+sudo apt  install taskwarrior  # version 2.6.2+dfsg-1
+See 'snap info task' for additional versions.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o process flow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask listar /bin/ls -1
+output listar teste, .txt
+append listar teste.txt
+task w /bin/ls -1
+task o /usr/bin/sort
+tas   run pipe listar      w o
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ task [K[K[K[K[Kgcc main.c processo.c -o process flow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask w /bin/ls -1
+task o /usr  /bin/sort
+task c /usk/bin/wc -1
+run pip  e w o
+task u /bin/ls -1
+task y /usr/bin/wc -1
+run pipe u y
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask listar /bin/ls -1
+task ordenar /usr/bin/sort
+run pipe listar ordenar
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task w /bin/ls -1
+task o /usr/bin/sort
+run pipe w o
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task c /usr/bin/wc -1
+run pipe w o c
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task f /usr/bin/wx -1
+run pipe w o f
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ sr[Kcript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@

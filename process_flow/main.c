@@ -67,48 +67,72 @@ void checar(char* tokens[], int qtd){
         }
 
         else if(strcmp(tokens[1], "pipe") == 0){
-            int posicao1 = -1;
-            int posicao2 = -1;
-            
-            for (int i=0; i<qtdDeTasks; i++){
-                if (strcmp(tokens[2], tasks[i].nome) == 0){
-                    posicao1 = i;
+
+            int qtdPipe = qtd -2;
+            int posicao[20];
+            pid_t pids[20];
+            int fd[20][2];
+
+            for (int i=0; i<qtdPipe; i++){
+                posicao[i] = -1; 
+
+                for (int j=0; j<qtdDeTasks; j++){
+                    if (strcmp(tokens[i+2], tasks[j].nome) == 0){
+                        posicao[i] = j;
+                        break;
+                    }
                 }
 
-                if (strcmp(tokens[3], tasks[i].nome) == 0){
-                    posicao2 = i;
+                if (posicao[i] == -1){
+                    printf("a tarefa nao foi encontrada\n");
+                    return;
                 }
             }
-            int fd[2];
-            pipe(fd);
-            pid_t PID1 = fork();
 
-            if (PID1 == 0){
-                dup2(fd[1], 1);
-                close(fd[0]);
-                close(fd[1]);
-
-                execvp(tasks[posicao1].argv[0], tasks[posicao1].argv);
+            for (int i=0; i<qtdPipe- 1; i++){
+                if (pipe(fd[i]) < 0){
+                    printf("deu erro no pipe");
+                    return;
+                }
             }
 
-            pid_t PID2 = fork();
+            for (int i=0; i<qtdPipe; i++){
+                pids[i] = fork();
 
-            if (PID2 == 0){
-                dup2(fd[0], 0);
-                close(fd[0]);
-                close(fd[1]);
+                if (pids[i] < 0){
+                    printf("nao fez fork");
+                    return;
+                }
 
-                execvp(tasks[posicao2].argv[0], tasks[posicao2].argv);
+                else if(pids[i] == 0){
+                    if (i>0){
+                        dup2(fd[i-1][0], 0);
+                    }
+
+                    if (i< qtdPipe-1){
+                        dup2(fd[i][1], 1);
+                    }
+
+                    for (int j=0; j<qtdPipe-1; j++){
+                        close(fd[j][0]);
+                        close(fd[j][1]);
+                    }
+
+                    execvp(tasks[posicao[i]].argv[0], tasks[posicao[i]].argv);
+                    printf("erro no programa\n");
+                    exit(1);
+                }
             }
 
-            close(fd[0]);
-            close(fd[1]);
+            for (int i=0; i<qtdPipe-1; i++){
+                close(fd[i][0]);
+                close(fd[i][1]);
+            }
 
-            waitpid(PID1, NULL, 0);
-            waitpid(PID2, NULL, 0);
+            for (int i=0; i<qtdPipe; i++){
+                waitpid(pids[i], NULL, 0);
+            }
         }
-
-    
         else{
             for (int i=0; i<qtdDeTasks; i++){
             if (strcmp(tokens[1], tasks[i].nome) == 0){
