@@ -19,12 +19,12 @@ int qtdDeTasks = 0;
 
 int parse(char* linha, char* tokens[]){
     int cont = 0;
-    char* token = strtok(linha, " \n");
+    char* token = strtok(linha, " \t\r\n");
 
     while (token != NULL && cont < 20){
         tokens[cont] = token;
         cont++;
-        token = strtok(NULL, " \n");
+        token = strtok(NULL, " \t\r\n");
     }
     return cont;
 }
@@ -137,7 +137,7 @@ void checar(char* tokens[], int qtd){
             for (int i=0; i<qtdDeTasks; i++){
             if (strcmp(tokens[1], tasks[i].nome) == 0){
                 execProcesso(tasks[i].argv);
-                printf("achasse a tarefa");
+                printf("achasse a tarefa\n");
                 }
             }
         }
@@ -268,11 +268,36 @@ void checar(char* tokens[], int qtd){
     }
 }
 
-int main(){
+int main(int argc, char* argv[]){
+    FILE *entrada;
+
+    if (argc == 1){
+        entrada = stdin;
+    }
+
+    else if(argc == 2){
+        entrada = fopen(argv[1], "r");
+
+        if (entrada == NULL){
+            printf("nao abriu o workflow\n");
+            return 1;
+        }
+    }
+
+    else{
+        return 1;
+    }
+
     char linhaDigitada[200];
     char* tokens[20];
 
-    while (fgets(linhaDigitada, 200, stdin) != NULL){
+    while (fgets(linhaDigitada, 200, entrada) != NULL){
+
+        if (argc == 2){
+            printf("%s", linhaDigitada);
+            fflush(stdout);
+        }
+
         int qtd = parse(linhaDigitada, tokens);
 
         if (qtd > 0){
@@ -287,5 +312,8 @@ int main(){
             break;
         }
     }
+
+    if (entrada != stdin) fclose(entrada);
+
     return 0;
 }

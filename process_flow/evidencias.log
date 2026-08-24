@@ -1037,4 +1037,121 @@ systemd-private-264df3f374f1472f83d174d1029d5623-systemd-logind.service-X17TJr
 systemd-private-264df3f374f1472f83d174d1029d5623-systemd-resolved.service-HpAr33
 systemd-private-264df3f374f1472f83d174d1029d5623-systemd-timesyncd.service-dEgNIG
 o filho terminou de rodar
-acha
+achaScript started on 2026-08-24 09:54:44-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="87" LINES="16"]
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c r[Kprocesso.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow teste.pf
+[?2004lnao abriu o workflow
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow teste.pf
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ task listar /bin/ls -1
+[?2004lCommand 'task' not found, but can be installed with:
+sudo snap install task         # version v3.51.1, or
+sudo apt  install taskwarrior  # version 2.6.2+dfsg-1
+See 'snap info task' for additional versions.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ cat teste.pf
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ cat teste.pf
+[?2004ltask listar /bin/ls -1
+run listar
+exit
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow teste.pf
+[?2004ltask listar /bin/ls -1
+run listar
+exit
+esse comando não existe[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./po[Krocessflow teste.pf
+[?2004ltask listar /bin/ls -1
+run listar
+fiz o fork, sou o pai
+fiz o fork, sou filho
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+teste.pf
+o filho terminou de rodar
+achasse a tarefaexit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ^C[?2004l[?2004h[?2004l
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/ProScript started on 2026-08-24 09:47:56-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="87" LINES="16"]
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow[00m$ gcc main.c  processo.c -o processflow
+[?2004l[01m[Kcc1:[m[K [01;31m[Kfatal error: [m[Kmain.c: No such file or directory
+compilation terminated.
+[01m[Kcc1:[m[K [01;31m[Kfatal error: [m[Kprocesso.c: No such file or directory
+compilation terminated.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow[00m$ cd [K rp[K[Kprocess flow
+[?2004lbash: cd: processflow: No such file or directory
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow[00m$ ls
+[?2004l[0m[01;32mevidencias.log[0m  [34;42mprocess_flow[0m
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow[00m$ cd process _flow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltest,pf
+esse comando não existe
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ scti[K[Kript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c r[Kprocesso.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow teste.pf
+[?2004lnao abriu o workflow
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow teste.pf
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ task listar /bin/ls -1
+[?2004lCommand 'task' not found, but can be installed with:
+sudo snap install task         # version v3.51.1, or
+sudo apt  install taskwarrior  # version 2.6.2+dfsg-1
+See 'snap info task' for additional versions.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ cat teste.pf
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-mcess Flow 1/Process-Flow/process_flow[00m$ ./processflow semexit.pf
+[?2004ltask listar /bin/ls -1
+run listarfiz o fork, sou o pai
+run listarfiz o fork, sou filho
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+semexit.pf
+teste.pf
+o filho terminou de rodar
+achasse a tarefa[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow naoexiste.pf
+[?2004lnao abriu o workflow
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ cat ../evidencias.log >> evidenc ias.log
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-24 10:25:03-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-24 10:25:58-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="61" LINES="15"]
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gecc[K[K[Kcc mainc[K.c processo.c -o process fo[Klow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ task listar /bin/ls -1
+[?2004lCommand 'task' not found, but can be installed with:
+sudo snap install task         # version v3.51.1, or
+sudo apt  install taskwarrior  # version 2.6.2+dfsg-1
+See 'snap info task' for additional versions.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow semexit.pf
+[?2004ltask listar /bin/ls -1
+run listarfiz o fork, sou o pai
+fiz o fork, sou filho
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+semexit.pf
+teste.pf
+o filho terminou de rodar
+achasse a tarefa
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./[r[K[Kprocessflow naoexiste.pf
+[?2004lnao abriu o workflow
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ exit
+[?2004lexit
+
+Script done on 2026-08-24 10:30:42-03:00 [COMMAND_EXIT_CODE="1"]
