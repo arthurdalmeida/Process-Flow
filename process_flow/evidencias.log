@@ -1209,4 +1209,24 @@ start o
 [1]- 783
 exit
 esse é o comando exit
-programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/p
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/pScript started on 2026-08-24 15:46:12-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="87" LINES="15"]
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ,/processflow
+[?2004lbash: ,/processflow: No such file or directory
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask f /bin/sleep 5
+start f
+achei
+[1]- 605
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc man[Kin.c processo.c -o process flow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask o /bin/sleep 5
+start o
+[1]- 783
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Pr

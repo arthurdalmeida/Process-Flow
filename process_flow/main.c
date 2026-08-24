@@ -296,6 +296,27 @@ void checar(char* tokens[], int qtd){
         tasks[qtdDeTasks].argv[j] = NULL;
         qtdDeTasks++;
     }
+
+    else if(strcmp(tokens[0], "jobs") == 0){
+        for (int i=0; i<qtdJobs; i++){
+            if (jobs[i].ativo == 1){
+                printf("[%d]- %d %s\n", jobs[i].id, jobs[i].pid, jobs[i].nome);
+            }
+        }
+    }
+
+    else if(strcmp(tokens[0], "wait") == 0){
+        int id = atoi(tokens[1]);
+
+        for (int i=0; i<qtdJobs; i++){
+            if (jobs[i].id == id){
+                if(jobs[i].ativo == 1){
+                    waitpid(jobs[i].pid, NULL, 0);
+                    jobs[i].ativo = 0;
+                }
+            }
+        }
+    }
     
     else if (strcmp(tokens[0], "exit") == 0){
         printf("esse é o comando exit\n");
