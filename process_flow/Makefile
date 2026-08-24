@@ -1,10 +1,7 @@
-processflow: processo.o
-	gcc processo.o -o processflow
-
-processo.o: processo.c
-	gcc -c processo.c
+processflow: main.c
+	gcc main.c -o processflow
 
 clean:
-	rm -f *.o processflow
+	rm -f processflow
 
 .PHONY: clean

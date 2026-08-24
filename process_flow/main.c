@@ -5,8 +5,6 @@
 #include <string.h>
 #include <fcntl.h>
 
-void execProcesso(char* argv[]);
-pid_t processoParallel(char* argv[]);
 
 typedef struct {
     char nome[50];
@@ -26,6 +24,56 @@ typedef struct {
 
 job jobs[50];
 int qtdJobs = 0;
+
+void execProcesso(char* argv[]){
+    pid_t pid;
+
+    pid = fork();
+
+    if (pid<0){
+        printf("Erro no fork\n");
+        return;
+    }
+
+    else if (pid == 0){
+        printf("fiz o fork, sou filho\n");
+        execvp(argv[0], argv);
+        printf("erro ao executar programa\n");
+        return;
+    }
+
+    else {
+        printf("fiz o fork, sou o pai\n");
+        int status;
+        waitpid(pid, &status, 0);
+        printf("o filho terminou de rodar\n");
+    }
+}
+
+
+pid_t processoParallel(char* argv[]){
+    pid_t pid;
+
+    pid = fork();
+
+    if (pid<0){
+        printf("Erro no fork\n");
+        return -1;
+    }
+
+    else if (pid == 0){
+        execvp(argv[0], argv);
+        printf("erro\n");
+        return -1;
+    }
+
+    else {
+        printf("fiz o fork, sou o pai\n");
+        printf("iniciou o processo filho. PID: %d\n", pid);
+        return pid;
+    }
+}
+
 
 int parse(char* linha, char* tokens[]){
     int cont = 0;
