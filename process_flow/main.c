@@ -227,6 +227,20 @@ void checar(char* tokens[], int qtd){
         }
     }
 
+    else if(strcmp(tokens[0], "workdir") == 0){
+        if (qtd < 2){
+            printf("o diretorio nao foi informad\n");
+            return;
+        }
+
+        if (chdir(tokens[1]) != 0){
+            printf("invalido\n");
+            return;
+        }
+
+        printf("diretorio foi alterado\n");
+    }
+
     else if (strcmp(tokens[0], "task") == 0){
         if (qtd<3){
             return;

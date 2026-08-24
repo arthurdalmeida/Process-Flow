@@ -641,4 +641,400 @@ exit
 esse é o comando exit
 programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ sr[Kcript -a evidencias.log
 [?2004lScript started, output log file is 'evidencias.log'.
-[?2004h]0;arthuralmeida@
+[?2004h]0;arthuralmeida@Script started on 2026-08-23 18:02:09-03:00 [TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="61" LINES="18"]
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ task [K[K[K[K[Kgcc main.c processo.c -o process flow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask w /bin/ls -1
+task o /usr  /bin/sort
+task c /usk/bin/wc -1
+run pip  e w o
+task u /bin/ls -1
+task y /usr/bin/wc -1
+run pipe u y
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask listar /bin/ls -1
+task ordenar /usr/bin/sort
+run pipe listar ordenar
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task w /bin/ls -1
+task o /usr/bin/sort
+run pipe w o
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task c /usr/bin/wc -1
+run pipe w o c
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task f /usr/bin/wx -1
+run pipe w o f
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ sr[Kcript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask listar      w /bin/ls -1
+task o /usar  r/bin/sort
+task c /usr/bin/wc -1
+run pipe w o c
+/usr/bin/wc: invalid option -- '1'
+Try '/usr/bin/wc --help' for more information.
+task f /usr/bin/wc -l
+run pipe w o f
+8
+task t /usr/bin/ct at
+task i g /usr/bin/grep c
+task n /usr/bin/wc -l
+run pipe w o t f g n
+5
+task q /bin/ls -1
+workdir /tmp
+esse comando não existerun q
+fiz o fork, sou o pai
+fiz o fork, sou filho
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+o filho terminou de rodar
+achasse a tarefa
+gcc main.c processo.c -o processflow
+esse comando não existe
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ task [K[K[K[K[Kgcc main.c processo.c -o process flow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask w /bin/ls -1
+task o /usr  /bin/sort
+task c /usk/bin/wc -1
+run pip  e w o
+task u /bin/ls -1
+task y /usr/bin/wc -1
+run pipe u y
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask listar /bin/ls -1
+task ordenar /usr/bin/sort
+run pipe listar ordenar
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task w /bin/ls -1
+task o /usr/bin/sort
+run pipe w o
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task c /usr/bin/wc -1
+run pipe w o c
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task f /usr/bin/wx -1
+run pipe w o f
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ sr[Kcript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask listar      w /bin/ls -1
+task o /usar  r/bin/sort
+task c /usr/bin/wc -1
+run pipe w o c
+/usr/bin/wc: invalid option -- '1'
+Try '/usr/bin/wc --help' for more information.
+task f /usr/bin/wc -l
+run pipe w o f
+8
+task t /usr/bin/ct at
+task i g /usr/bin/grep c
+task n /usr/bin/wc -l
+run pipe w o t f g n
+5
+task q /bin/ls -1
+workdir /tmp
+esse comando não existerun q
+fiz o fork, sou o pai
+fiz o fork, sou filho
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+o filho terminou de rodar
+achasse a tarefa
+gcc main.c processo.c -o processflow
+esse comando não existe
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [7mgcc main.c processo.c -o processflow[K[K[K[Kgcc main.c processo.c -o process flow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask w /bin/ls -1
+task o /usr  /bin/sort
+task c /usk/bin/wc -1
+run pip  e w o
+task u /bin/ls -1
+task y /usr/bin/wc -1
+run pipe u y
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask listar /bin/ls -1
+task ordenar /usr/bin/sort
+run pipe listar ordenar
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task w /bin/ls -1
+task o /usr/bin/sort
+run pipe w o
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task c /usr/bin/wc -1
+run pipe w o c
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task f /usr/bin/wx -1
+run pipe w o f
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ sr[Kcript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask listar      w /bin/ls -1
+task o /usar  r/bin/sort
+task c /usr/bin/wc -1
+run pipe w o c
+/usr/bin/wc: invalid option -- '1'
+Try '/usr/bin/wc --help' for more information.
+task f /usr/bin/wc -l
+run pipe w o f
+8
+task t /usr/bin/ct at
+task i g /usr/bin/grep c
+task n /usr/bin/wc -l
+run pipe w o t f g n
+5
+task q /bin/ls -1
+workdir /tmp
+esse comando não existerun q
+fiz o fork, sou o pai
+fiz o fork, sou filho
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+o filho terminou de rodar
+achasse a tarefa
+gcc main.c processo.c -o processflow
+esse comando não existe
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [7mgcc main.c processo.c -o processflow[27m[C[C[Cgcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeidScript started on 2026-08-23 20:23:12-03:00 [TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="87" LINES="11"]
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask listar /bin/ls -1
+task ordenar /usr/bin/sort
+run pipe listar ordenar
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task w /bin/ls -1
+task o /usr/bin/sort
+run pipe w o
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task c /usr/bin/wc -1
+run pipe w o c
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+task f /usr/bin/wx -1
+run pipe w o f
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ sr[Kcript -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask listar      w /bin/ls -1
+task o /usar  r/bin/sort
+task c /usr/bin/wc -1
+run pipe w o c
+/usr/bin/wc: invalid option -- '1'
+Try '/usr/bin/wc --help' for more information.
+task f /usr/bin/wc -l
+run pipe w o f
+8
+task t /usr/bin/ct at
+task i g /usr/bin/grep c
+task n /usr/bin/wc -l
+run pipe w o t f g n
+5
+task q /bin/ls -1
+workdir /tmp
+esse comando não existerun q
+fiz o fork, sou o pai
+fiz o fork, sou filho
+Makefile
+README.md
+evidencias.log
+main.c
+output
+processflow
+processo.c
+processo.o
+o filho terminou de rodar
+achasse a tarefa
+gcc main.c processo.c -o processflow
+esse comando não existe
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [7mgcc main.c processo.c -o processflow[27m[C[C[Cgcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask q /bin/ls -1
+workdir /tmp
+diretorio foi alterado
+run q
+fiz o fork, sou o pai
+fiz o fork, sou filho
+snap-private-tmp
+systemd-private-264df3f374f1472f83d174d1029d5623-polkit.service-C4uFWM
+systemd-private-264df3f374f1472f83d174d1029d5623-systemd-logind.service-X17TJr
+systemd-private-264df3f374f1472f83d174d1029d5623-systemd-resolved.service-HpAr33
+systemd-private-264df3f374f1472f83d174d1029d5623-systemd-timesyncd.service-dEgNIG
+o filho terminou de rodar
+acha
