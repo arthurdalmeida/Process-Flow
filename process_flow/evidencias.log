@@ -1155,3 +1155,58 @@ achasse a tarefa
 [?2004lexit
 
 Script done on 2026-08-24 10:30:42-03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2026-08-24 15:27:12-03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="87" LINES="15"]
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[01m[Kmain.c:[m[K In function ‘[01m[Kchecar[m[K’:
+[01m[Kmain.c:266:28:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrcpy[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+  266 |                     strcpy([01;35m[KjobID[m[K, tasks[i]);
+      |                            [01;35m[K^~~~~[m[K
+      |                            [01;35m[K|[m[K
+      |                            [01;35m[Kint[m[K
+In file included from [01m[Kmain.c:5[m[K:
+[01m[K/usr/include/string.h:141:39:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar * restrict[m[K’ but argument is of type ‘[01m[Kint[m[K’
+  141 | extern char *strcpy ([01;36m[Kchar *__restrict __dest[m[K, const char *__restrict __src)
+      |                      [01;36m[K~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[Kmain.c:266:40:[m[K [01;31m[Kerror: [m[Kincompatible type for argument 2 of ‘[01m[Kstrcpy[m[K’
+  266 |                     strcpy(jobID, [01;31m[Ktasks[i][m[K);
+      |                                   [01;31m[K~~~~~^~~[m[K
+      |                                        [01;31m[K|[m[K
+      |                                        [01;31m[Ktask[m[K
+[01m[K/usr/include/string.h:141:70:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char * restrict[m[K’ but argument is of type ‘[01m[Ktask[m[K’
+  141 | extern char *strcpy (char *__restrict __dest, [01;36m[Kconst char *__restrict __src[m[K)
+      |                                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ exit[K[K[K[K[?2004l
+exit
+
+Script done on 2026-08-24 15:28:04-03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2026-08-24 15:30:02-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="87" LINES="15"]
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltasl   k dormir      o /bin/sleep 5
+start dormir      o
+task w /bin  /slp eep 5
+start w
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc main.c processo.c -o processflow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ,/processflow
+[?2004lbash: ,/processflow: No such file or directory
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask f /bin/sleep 5
+start f
+achei
+[1]- 605
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ [K[A[K]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ script -a evidencias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ gcc man[Kin.c processo.c -o process flow
+[?2004l[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[01;32marthuralmeida@tucano-maquina[00m:[01;34m/mnt/c/Users/almei/Process Flow 1/Process-Flow/process_flow[00m$ ./processflow
+[?2004ltask o /bin/sleep 5
+start o
+[1]- 783
+exit
+esse é o comando exit
+programa encerrado[?2004h]0;arthuralmeida@tucano-maquina: /mnt/c/Users/almei/Process Flow 1/Process-Flow/p

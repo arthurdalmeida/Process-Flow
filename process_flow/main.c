@@ -17,6 +17,16 @@ typedef struct {
 task tasks[50];
 int qtdDeTasks = 0;
 
+typedef struct {
+    int id;
+    pid_t pid;
+    char nome[50];
+    int ativo;
+} job;
+
+job jobs[50];
+int qtdJobs = 0;
+
 int parse(char* linha, char* tokens[]){
     int cont = 0;
     char* token = strtok(linha, " \t\r\n");
@@ -239,6 +249,34 @@ void checar(char* tokens[], int qtd){
         }
 
         printf("diretorio foi alterado\n");
+    }
+
+    else if(strcmp(tokens[0], "start") == 0){
+        for (int i=0; i<qtdDeTasks; i++){
+            if (strcmp(tokens[1], tasks[i].nome) == 0){
+                pid_t pid = fork();
+
+                if (pid<0){
+                    printf("deu erro no fork\n");
+                    return;
+                }
+
+                if (pid == 0){
+                    execvp(tasks[i].argv[0], tasks[i].argv);
+                    exit(1);
+                }
+
+                if (pid>0){
+                    jobs[qtdJobs].id = qtdJobs + 1;
+                    jobs[qtdJobs].pid = pid;
+                    jobs[qtdJobs].ativo = 1;
+                    strcpy(jobs[qtdJobs].nome, tasks[i].nome);
+
+                    printf("[%d]- %d\n", jobs[qtdJobs].id, pid);
+                    qtdJobs++;
+                }
+            }
+        }
     }
 
     else if (strcmp(tokens[0], "task") == 0){
