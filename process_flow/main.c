@@ -92,12 +92,19 @@ void checar(char* tokens[], int qtd){
         }
         if (strcmp(tokens[1], "sequential") == 0){
             for (int i=2; i<qtd; i++){
+                int encontrou = 0;
+
                 for (int j=0; j<qtdDeTasks; j++){
                     if (strcmp(tasks[j].nome, tokens[i]) == 0){
+                        encontrou = 1;
                         execProcesso(tasks[j].argv);
+                        break;
                     }   
                 }
-            }
+                if (encontrou == 0){
+                    printf("Tarefa %s nao encontrada\n", tokens[i]);
+                }
+            }   
         }
 
         else if(strcmp(tokens[1], "parallel") == 0){
@@ -105,14 +112,20 @@ void checar(char* tokens[], int qtd){
             int qtdPID = 0;
 
             for (int i=2; i<qtd; i++){
+                int encontrou = 0;
                 for (int j=0; j<qtdDeTasks; j++){
                     if (strcmp(tasks[j].nome, tokens[i]) == 0){
+                        encontrou =1;
                         pids[qtdPID] = processoParallel(tasks[j].argv);
 
                         if (pids[qtdPID] != -1){
                             qtdPID++;
                         }
+                        break;
                     }
+                }
+                if (encontrou == 0){
+                    printf("Tarefa %s nao encontrada\n", tokens[i]);
                 }
             }
             for (int i=0; i<qtdPID; i++){
@@ -188,17 +201,36 @@ void checar(char* tokens[], int qtd){
             }
         }
         else{
+            int encontrou = 0;
+
             for (int i=0; i<qtdDeTasks; i++){
             if (strcmp(tokens[1], tasks[i].nome) == 0){
+                encontrou = 1;
                 execProcesso(tasks[i].argv);
-                printf("achasse a tarefa\n");
                 }
+            }
+            if (encontrou == 0){
+                printf("Tarefa nao encontrada\n");
             }
         }
     }
     else if(strcmp(tokens[0], "output") == 0){
         if (qtd < 3){
             printf("Erro- informe a tarefa e qual é o arquivo\n");
+            return;
+        }
+
+        int posicao = -1;
+
+        for (int i=0; i<qtdDeTasks; i++){
+            if (strcmp(tokens[1], tasks[i].nome) == 0){
+                posicao = i;
+                break;
+            }
+        }
+
+        if (posicao == -1){
+            printf("Tarefa nao encontrada\n");
             return;
         }
 
@@ -221,6 +253,8 @@ void checar(char* tokens[], int qtd){
                     dup2(arquivo, 1);
                     close(arquivo);
                     execvp(tasks[i].argv[0], tasks[i].argv);
+                    printf("Erro ao executar\n");
+                    exit(1);
                 }
 
                 else{
@@ -234,6 +268,20 @@ void checar(char* tokens[], int qtd){
     else if(strcmp(tokens[0], "input") == 0){
         if (qtd < 3){
             printf("Erro- informe a tarefa e qual é o arquivo\n");
+            return;
+        }
+
+        int posicao = -1;
+
+        for (int i=0; i<qtdDeTasks; i++){
+            if (strcmp(tokens[1], tasks[i].nome) == 0){
+                posicao = i;
+                break;
+            }
+        }
+
+        if (posicao == -1){
+            printf("Tarefa nao encontrada\n");
             return;
         }
 
@@ -257,6 +305,8 @@ void checar(char* tokens[], int qtd){
                     dup2(arquivo, 0);
                     close(arquivo);
                     execvp(tasks[i].argv[0], tasks[i].argv);
+                    printf("Erro ao executar\n");
+                    exit(1);
                 }
 
                 else{
@@ -270,6 +320,20 @@ void checar(char* tokens[], int qtd){
     else if(strcmp(tokens[0], "append") == 0){
         if (qtd < 3){
             printf("Erro- informe a tarefa e qual é o arquivo\n");
+            return;
+        }
+
+        int posicao = -1;
+
+        for (int i=0; i<qtdDeTasks; i++){
+            if (strcmp(tokens[1], tasks[i].nome) == 0){
+                posicao = i;
+                break;
+            }
+        }
+
+        if (posicao == -1){
+            printf("Tarefa nao encontrada\n");
             return;
         }
 
@@ -292,6 +356,8 @@ void checar(char* tokens[], int qtd){
                     dup2(arquivo, 1);
                     close(arquivo);
                     execvp(tasks[i].argv[0], tasks[i].argv);
+                    printf("Erro ao executar\n");
+                    exit(1);
                 }
 
                 else{
@@ -321,9 +387,13 @@ void checar(char* tokens[], int qtd){
             printf("Erro. Informe a tarefa\n");
             return;
         }
+        int encontrou = 0;
 
         for (int i=0; i<qtdDeTasks; i++){
             if (strcmp(tokens[1], tasks[i].nome) == 0){
+
+                encontrou = 1;
+
                 pid_t pid = fork();
 
                 if (pid<0){
@@ -344,8 +414,13 @@ void checar(char* tokens[], int qtd){
 
                     printf("[%d]- %d\n", jobs[qtdJobs].id, pid);
                     qtdJobs++;
+
+                    break;
                 }
-            }
+            }     
+        }
+        if (encontrou == 0){
+            printf("Tarefa nao encontrada\n");
         }
     }
 
@@ -390,13 +465,21 @@ void checar(char* tokens[], int qtd){
 
         int id = atoi(tokens[1]);
 
+        int encontrou = 0;
+
         for (int i=0; i<qtdJobs; i++){
             if (jobs[i].id == id){
+                encontrou = 1;
+
                 if(jobs[i].ativo == 1){
                     waitpid(jobs[i].pid, NULL, 0);
                     jobs[i].ativo = 0;
                 }
             }
+        }
+
+        if(encontrou == 0){
+            printf("Job nao foi encontrado\n");
         }
     }
     
