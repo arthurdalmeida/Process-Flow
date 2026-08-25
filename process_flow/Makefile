@@ -1,5 +1,5 @@
 processflow: main.c
-	gcc main.c -o processflow
+	cc main.c -o processflow
 
 clean:
 	rm -f processflow
